@@ -237,16 +237,18 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 100%;
+  margin-top: 3vh;
   margin-right: 34px;
 }
 
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
+.main-content .top-content .text-content:first-child {
+margin-right: 5px;
 }
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%;
 }
 
 .main-content .bottom-content {
@@ -280,7 +282,9 @@ footer {
   font-size: 14px;
 }
 
-/**********Media Queries******/
+/**********Media Queries(******/
+
+/* media Query at 800***********/
 @media screen and (max-width: 800px){
     /*header*****************/
         .container {
@@ -326,6 +330,8 @@ footer {
         }
     }
     
+
+    /* Media Query at 500**********/
     @media screen and (max-width: 500px){
         
         .container {
@@ -354,24 +360,41 @@ footer {
         height: 10vh;
     }
     .main-content{
-      margin: 7px;
+      border: 1px solid green;
     }
+
     .main-content .top-content{
         align-items: center;
         flex-direction: column;
         width: 100%;
-        
+        /* margin: 10px; */
+        border: 1px solid red;
     }
 
-    .main-content .top-content . .text-content {
-      margin: 3vh;
+    .main-content .top-content  .text-content {
+      /* margin-top: 3vh;
+      margin-left: 6vh;
+      margin-right: 0; */
+      margin: 3vh 0 0 4vh;
+      width: 100%;
+      border: 1px solid blue;
     }
+
+    .main-content .middle-img {
+      width: 100%;
+      margin-left:3vh;
+      border: 1px solid fuchsia;
+    }
+
     .main-content .bottom-content{
         flex-direction: column;
         align-content: space-between;
+        border: 1px solid goldenrod;
     }
     .main-content .bottom-content .text-content {
-      margin: 3vh;
+      margin: 2vh;
+      width: 100%;
+      border: 1px solid rgb(12, 26, 66)
     }
     }
 

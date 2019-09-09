@@ -1,3 +1,466 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+  width: 75%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  /* margin-right: 65px; */
+  display: flex;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+} */
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* cta */
+.cta {
+  display: flex;
+}
+
+.cta .cta-text {
+  display: flex;
+  flex-flow: column nowrap;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+  display: flex;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+  display: flex;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/**********Media Queries******/
+@media screen and (max-width: 800px){
+    /*header*****************/
+        .container {
+        width: 90%;
+        margin: 0 5%;
+    }
+        header {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* margin: 0; */
+        /* height: 10vh; */
+    }
+
+    header nav {
+        justify-content: space-between;
+      }
+        /* nav a{
+        display: flex;
+        justify-content: space-evenly;} */
+        
+        .cta {
+        display: flex;
+        justify-content: center;
+        /* height: 30vh; */
+    }
+    .cta .cta-text {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-size: 77px;
+        text-align: center;
+        /* padding: 0px 75px; */
+      }
+        /* .cta h1{
+        font-size: 70px;
+    } */
+        .cta img{
+        display: none;
+    }
+        .middle-img {
+     width: 100%
+        }
+    }
+    
+    @media screen and (max-width: 500px){
+        
+        .container {
+            width: 100%;
+            margin: 0;
+            
+        }
+        header {
+        /* align-items: center; */
+        flex-direction: column-reverse;  
+        }
+
+        header nav {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        text-align: center; */
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    header nav a {
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+        border: 1px solid grey;
+        height: 10vh;
+    }
+    .main-content{
+      margin: 7px;
+    }
+    .main-content .top-content{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .main-content .top-content . .text-content {
+      margin: 3vh;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .main-content .bottom-content .text-content {
+      margin: 3vh;
+    }
+    }
+
+/*************** Services Doc ***********************/
+
+/* Services Header */
+.services-header-img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Intro */
+.intro {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+/* Services CSS */
+h1{
+  font-size: 60px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item{
+  width: 45%;
+  height: 45%;
+  margin:10px;
+  padding: 2%;
+  border:1px solid grey;
+  background-color: lightgray;
+ 
+}
+
+
+/* .service-item p{
+  padding: 10px;
+} */
+.service-item button{
+  border-radius: 5px;
+  width: 30%;
+  padding: 3%;
+  margin-top: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.bottom {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-item{
+  padding:2%;
+}
+
+li{
+  padding: 8px;
+}
+
+/* Vision Page*************/
+.hallway{
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+}
+.foresight {
+  display: flex;
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
+}
+
+.sight-items{
+  padding: 15px;
+  width: 100%;
+  border: 1px solid grey;
+  background: rgb(217, 232, 237);
+  margin: 15px;
+}
+.boxes {
+  display: flex;
+  flex-direction: column;
+}
 

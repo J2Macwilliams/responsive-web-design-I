@@ -350,7 +350,7 @@ footer {
         /* justify-content: center;
         text-align: center; */
         width: 100%;
-        /* border: 1px solid red; */
+        
     }
     header nav a {
       justify-content: center;
@@ -359,16 +359,14 @@ footer {
         border: 1px solid grey;
         height: 10vh;
     }
-    .main-content{
-      border: 1px solid green;
-    }
+    
 
     .main-content .top-content{
         align-items: center;
         flex-direction: column;
         width: 100%;
         /* margin: 10px; */
-        border: 1px solid red;
+        
     }
 
     .main-content .top-content  .text-content {
@@ -377,24 +375,25 @@ footer {
       margin-right: 0; */
       margin: 3vh 0 0 4vh;
       width: 100%;
-      border: 1px solid blue;
+      
     }
 
     .main-content .middle-img {
       width: 100%;
       margin-left:3vh;
-      border: 1px solid fuchsia;
+      margin-right:3vh;
+      
     }
 
     .main-content .bottom-content{
         flex-direction: column;
         align-content: space-between;
-        border: 1px solid goldenrod;
+        
     }
     .main-content .bottom-content .text-content {
       margin: 2vh;
       width: 100%;
-      border: 1px solid rgb(12, 26, 66)
+      
     }
     }
 

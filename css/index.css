@@ -282,7 +282,7 @@ footer {
   font-size: 14px;
 }
 
-/**********Media Queries(******/
+/**********Media Queries************************/
 
 /* media Query at 800***********/
 @media screen and (max-width: 800px){
@@ -290,6 +290,7 @@ footer {
         .container {
         width: 90%;
         margin: 0 5%;
+        /* border: 1px solid gray; */
     }
         header {
         display: flex;
@@ -380,8 +381,7 @@ footer {
 
     .main-content .middle-img {
       width: 100%;
-      margin-left:3vh;
-      margin-right:3vh;
+      padding: 3%;
       
     }
 
@@ -401,21 +401,19 @@ footer {
     }
     }
 
-/*************** Services Doc ***********************/
+/*************** Services Doc ********************/
 
 /* Services Header */
 .services-header-img{
-  margin-top: 20px;
-  margin-bottom: 20px;
+width: 100%;
+  margin: 3vh 0;
 }
 /* Intro */
-.intro {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
+
+
 /* Services CSS */
 h1{
-  font-size: 60px;
+  font-size: 3vh;
 }
 
 .services {
@@ -436,9 +434,6 @@ h1{
 }
 
 
-/* .service-item p{
-  padding: 10px;
-} */
 .service-item button{
   border-radius: 5px;
   width: 30%;
@@ -464,8 +459,66 @@ h1{
 li{
   padding: 8px;
 }
+/**********Media Queries************************/
 
-/* Vision Page*************/
+/* media Query at 800***********/
+@media screen and (max-width: 800px){
+
+  .container {
+    width: 100%;
+    margin: 5%;
+  }
+  .titleIntro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+  }
+
+  .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+  .bottom-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Media Query at 500**********/
+@media screen and (max-width: 500px){
+
+  .container {
+    width: 100%;
+    margin: 0;
+}
+.titleIntro{
+  width: 100%;
+  padding: 2%;
+}
+.services {
+  justify-content: space-between;
+  align-items: center;
+
+}
+.service-item{
+  width: 100%;
+}
+
+
+
+}
+/* Vision Page*************************************/
 .hallway{
   margin-top: 14px;
   display: flex;
